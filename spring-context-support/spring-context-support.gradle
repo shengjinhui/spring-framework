@@ -16,7 +16,6 @@ dependencies {
 	optional("org.freemarker:freemarker")
 	testCompile(project(":spring-context"))
 	testCompile(testFixtures(project(":spring-beans")))
-	testCompile(testFixtures(project(":spring-context")))
 	testCompile(testFixtures(project(":spring-core")))
 	testCompile(testFixtures(project(":spring-tx")))
 	testCompile("org.hsqldb:hsqldb")

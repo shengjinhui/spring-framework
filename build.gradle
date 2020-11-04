@@ -277,6 +277,8 @@ configure(allprojects) { project ->
 			cacheChangingModulesFor 0, "seconds"
 		}
 		repositories {
+			maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+			maven{ url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
 			mavenCentral()
 			maven { url "https://repo.spring.io/libs-spring-framework-build" }
 			maven { url "https://repo.spring.io/snapshot" } // Reactor
@@ -400,13 +402,13 @@ configure(rootProject) {
 		}
 	}
 
-	publishing {
-		publications {
-			mavenJava(MavenPublication) {
-				artifact docsZip
-				artifact schemaZip
-				artifact distZip
-			}
-		}
-	}
+//	publishing {
+//		publications {
+//			mavenJava(MavenPublication) {
+//				artifact docsZip
+//				artifact schemaZip
+//				artifact distZip
+//			}
+//		}
+//	}
 }
